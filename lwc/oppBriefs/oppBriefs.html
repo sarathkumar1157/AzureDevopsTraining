@@ -1,0 +1,30 @@
+<template>
+    <p class="slds-text-heading_small">{activeSectionMessage}</p>
+    <!--<lightning-button onclick={handleSetActiveSectionC} label="Open Section C"></lightning-button>-->
+    <div class="c-container">
+        <lightning-layout>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <lightning-accordion class="example-accordion"
+                        onsectiontoggle={handleToggleSection}
+                        active-section-name="B" key={contact.Id}>
+                        <lightning-accordion-section name="A" label="Accordion Title A">
+                        <lightning-button-menu slot="actions"
+                                    alternative-text="Show menu"
+                                    icon-size="x-small"
+                                    menu-alignment="right">
+                            <lightning-menu-item value="New" label="Menu Item One"></lightning-menu-item>
+                            <lightning-menu-item value="Edit" label="Menu Item Two"></lightning-menu-item>
+                        </lightning-button-menu>
+                        <p>This is the content area for section A.</p>
+                        <p>.</p>
+                        <p>.</p>
+                        <p>.</p>
+                        <p>The section height expands to fit your content.</p>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </template>
+            </template>
+        </lightning-layout>
+    </div>
+</template>

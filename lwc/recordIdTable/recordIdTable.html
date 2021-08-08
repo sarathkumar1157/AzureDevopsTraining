@@ -1,0 +1,29 @@
+<template>
+    <div class="c-container cSRM_SingleRelatedList">
+    <article class="slds-card slds-card_boundary">
+    <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate" title={OAtitle}>
+            <div>
+                <lightning-datatable
+                            key-field="id"
+                            data={dataOA}
+                            columns={columnsOA}>
+                    </lightning-datatable>
+            </div>
+        </header>
+    </div>
+</article>
+</div>
+    <br/>
+    <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+        <lightning-card  title={AHtitle} icon-name="standard:record" class="custom-box">
+            <div if:true={AHlength}>
+                <lightning-datatable
+                        key-field="id"
+                        data={dataAH}
+                        columns={columnsAH}>
+                </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+</template>

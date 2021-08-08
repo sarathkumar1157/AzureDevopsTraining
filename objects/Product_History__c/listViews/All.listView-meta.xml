@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SAP_Account__c</columns>
+    <columns>SalesOrg__c</columns>
+    <columns>Product_Code__c</columns>
+    <columns>Nett_Weight__c</columns>
+    <columns>Unit_Of_Measure__c</columns>
+    <columns>Last_Update__c</columns>
+    <columns>Product_BU__c</columns>
+    <columns>Period__c</columns>
+    <columns>Period01__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Records</label>
+</ListView>
